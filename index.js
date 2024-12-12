@@ -1,6 +1,8 @@
 const express = require("express");
 const mysql2 = require("mysql2");
 const app = express();
+const cors = require("cors");
+app.use(cors());
 const productRoute = require("./routes");
 const PORT = 5000;
 app.use(express.json());
